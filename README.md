@@ -29,8 +29,8 @@ By default, the destructor calls `commit()`, meaning changes persist unless you 
 ## Example Usage
 
 ```cpp
-#include "object_transaction.hpp"
 #include <iostream>
+#include "object_transaction.hpp"
 
 struct config
 {
