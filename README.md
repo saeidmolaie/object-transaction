@@ -32,12 +32,14 @@ By default, the destructor calls `commit()`, meaning changes persist unless you 
 #include "object_transaction.hpp"
 #include <iostream>
 
-struct Config {
+struct config
+{
     int value;
 };
 
-int main() {
-    Config cfg{10};
+int main()
+{
+    config cfg{10};
 
     {
         objtran::object_transaction<Config> tx(&cfg);
